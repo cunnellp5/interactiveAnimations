@@ -200,3 +200,7 @@ hp-learn-no, hp-learn-yes {
     opacity: 0;
   }
 }
+
+.hidden {
+  display: none;
+}
