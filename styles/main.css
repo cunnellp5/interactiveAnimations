@@ -25,6 +25,7 @@ hp-presentation > hp-slide.active {
 
 hp-presentation {
   display: block;
+  background-color: #fff;
   /* these vmins give us a responsive shape */
   width: 80vmin;
   height: 80vmin;
@@ -145,4 +146,27 @@ hp-chooser.chosen.animate > *:not(.chosen) {
     max-width: 16.6%;
     opacity: .25;
   }
+}
+
+hp-learn {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+hp-learn hp-learn-no, hp-learn hp-learn-yes {
+  max-width: 20%;
+}
+
+hp-learn img {
+  max-width: 50%;
+  transition-property: margin;
+  transition-duration: .5s;
+}
+
+hp-learn-no, hp-learn-yes {
+  display: none;
 }
