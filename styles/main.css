@@ -5,7 +5,6 @@ html, body {
 
 hp-content {
   display: flex;
-  background-color: #f00;
 
   width: 100vw;
   height: 100vh;
@@ -14,21 +13,53 @@ hp-content {
   align-items: center;
 }
 
+hp-presentation > hp-slide {
+  display: none;
+}
+
+hp-presentation > hp-slide.active {
+  display: inline-block;
+}
+
 hp-presentation {
   display: block;
-  background-color: #fff;
   /* these vmins give us a responsive shape */
   width: 80vmin;
   height: 80vmin;
+
+  border: 3px solid black;
+  border-radius: 10px;
 }
 
 hp-slide {
   /* inline block doesnt pull down all the html from the margins below */
-  display: inline-block;
-  background-color: #0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   /* percents of its parent */
   width: 80%;
   height: 80%;
   /* margins to center */
   margin: 10%;
+
+  font-size: 8vmin;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+hp-chooser {
+  display: flex;
+  width: 100%;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+hp-chooser * {
+  /* this wild card styles all the children elements */
+  max-width: 20%;
+  margin: 5% 2.5%;
 }
