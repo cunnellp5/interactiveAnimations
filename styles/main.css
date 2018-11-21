@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(90deg, #0F2027 0%, #203A43 35%, #2C5364 100%);
 }
 
 hp-content {
@@ -30,7 +31,7 @@ hp-presentation {
   width: 80vmin;
   height: 80vmin;
 
-  border: 3px solid black;
+  border: 3px solid #008080;
   border-radius: 10px;
 }
 
@@ -209,5 +210,6 @@ hp-learn-no, hp-learn-yes {
 path {
   fill: none;
   stroke: #0f0;
+  /* stroke: url(https://upload.wikimedia.org/wikipedia/commons/archive/3/31/20180115070118%21Rainbow-gradient-fully-saturated.svg); */
   stroke-width: 1.5vmin;
 }
