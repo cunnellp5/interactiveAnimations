@@ -17,6 +17,12 @@ function handlePresentationClick (e){
     current.classList.remove('active');
     next.classList.add('active');
 
+    next.querySelectorAll('.match').forEach((el) => {
+      setTimeout(() => {
+        el.classList.remove('match')
+      }, 0)
+    });
+
     var aa = parseInt(next.getAttribute('data-autoadvance'))
 
     if (!isNaN(aa)) {
