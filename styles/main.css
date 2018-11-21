@@ -72,6 +72,7 @@ hp-chooser.chosen > *.chosen {
 
   animation-name: chosen;
   animation-duration: .5s;
+  animation-timing-function: ease;
 }
 
 @keyframes chosen {
@@ -89,14 +90,18 @@ hp-chooser.chosen > *:not(.chosen) {
 
   animation-name: unchosen;
   animation-duration: .5s;
+  opacity: .25;
+  animation-timing-function: linear;
 }
 
 @keyframes unchosen {
   from {
     max-width: 20%;
+    opacity: 1;
   }
 
   to {
     max-width: 16.6%;
+    opacity: .25;
   }
 }
