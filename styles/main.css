@@ -10,3 +10,11 @@ hp-content {
   width: 100vw;
   height: 100vh;
 }
+
+hp-presentation {
+  display: block;
+  background-color: #fff;
+
+  width: 80vmin;
+  height: 80vmin;
+}
