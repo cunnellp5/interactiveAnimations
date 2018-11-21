@@ -39,6 +39,7 @@ hp-slide {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: center;
   /* percents of its parent */
   width: 80%;
   height: 80%;
