@@ -18,7 +18,9 @@ hp-presentation > hp-slide {
 }
 
 hp-presentation > hp-slide.active {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 hp-presentation {
